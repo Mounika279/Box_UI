@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body{
+            background-color: black;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main {
+            display: flex;
+        }
+        .square{
+            border: 3px solid greenyellow;
+            height:220px;
+            width:220px;
+            border-radius: 30px;
+            margin-left: 400px;
+            margin-top: 90px;
+        }
+        .squ{
+            border: 3px solid greenyellow;
+            height:200px;
+            width:200px;
+            border-radius: 30px;
+            margin-left: -215px;
+            margin-top: 100px;
+        }
+        .square1{
+            border: 3px solid orangered;
+            height:230px;
+            width:230px;
+            margin-left:300px;
+            margin-top: 90px;
+            border-radius: 30px;
+        }
+        .squ1{
+            border: 3px solid orangered;
+            height:210px;
+            width:210px;
+            margin-left:-225px ;
+            margin-top:100px;
+            border-radius: 30px;
+        }
+        .rectangle{
+            border:3px solid goldenrod;
+            height: 90px;
+            width:500px;
+            border-radius: 20px;
+            margin-top:410px;
+            margin-left: -500px;
+        }
+        .rect{
+            border:3px solid goldenrod;
+            height: 70px;
+            width:490px;
+            border-radius: 20px;
+            margin-top:420px;
+            margin-left: -500px;
+        }
+        .rectangle1{
+            border:3px dashed white;
+            height: 90px;
+            width:740px;
+            margin-top:580px;
+            margin-left: -750px;
+        }
+        .square p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;   
+        }
+        .square1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-top:-30px;
+        }
+        .rectangle p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .rectangle1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .arrow p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-130px;
+        }
+        .arrow{
+            margin-top: 400px;
+            margin-left: -710px;
+        }
+         b{
+            margin-top: 300px;
+            margin-left: -60px;
+        }
+        i{
+            margin-top: 410px;
+            margin-left: 50px;
+        }
+        @media screen and (max-width:480px){
+            body{
+            background-color: black;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main {
+            display: flex;
+        }
+        .square{
+            border: 3px solid greenyellow;
+            height:220px;
+            width:220px;
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-top: 90px;
+        }
+        .squ{
+            border: 3px solid greenyellow;
+            height:180px;
+            width:180px;
+            border-radius: 30px;
+            margin-left: -100px;
+            margin-top: 100px;
+        }
+        .square1{
+            border: 3px solid orangered;
+            height:230px;
+            width:230px;
+            margin-left:200px;
+            margin-top: 90px;
+            border-radius: 30px;
+        }
+        .squ1{
+            border: 3px solid orangered;
+            height:210px;
+            width:210px;
+            margin-left:-225px ;
+            margin-top:100px;
+            border-radius: 30px;
+        }
+        .rectangle{
+            border:3px solid goldenrod;
+            height: 90px;
+            width:500px;
+            border-radius: 20px;
+            margin-top:410px;
+            margin-left: -500px;
+        }
+        .rect{
+            border:3px solid goldenrod;
+            height: 70px;
+            width:490px;
+            border-radius: 20px;
+            margin-top:420px;
+            margin-left: -500px;
+        }
+        .rectangle1{
+            border:3px dashed white;
+            height: 90px;
+            width:740px;
+            margin-top:580px;
+            margin-left: -750px;
+        }
+        .square p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;   
+        }
+        .square1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-top:-30px;
+        }
+        .rectangle p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .rectangle1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .arrow p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-130px;
+        }
+        .arrow{
+            margin-top: 400px;
+            margin-left: -650px;
+        }
+         b{
+            margin-top: 300px;
+            margin-left: 10px;
+        }
+        i{
+            margin-top: 410px;
+            margin-left: -65px;
+            font-size: 10px;
+        }
+        }
+        @media screen and (max-width:720px){
+            body{
+            background-color: black;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main {
+            display: flex;
+        }
+        .square{
+            border: 3px solid greenyellow;
+            height:220px;
+            width:220px;
+            border-radius: 30px;
+            margin-left: 10px;
+            margin-top: 90px;
+        }
+        .squ{
+            border: 3px solid greenyellow;
+            height:200px;
+            width:200px;
+            border-radius: 30px;
+            margin-left: -215px;
+            margin-top: 100px;
+        }
+        .square1{
+            border: 3px solid orangered;
+            height:230px;
+            width:230px;
+            margin-left:200px;
+            margin-top: 90px;
+            border-radius: 30px;
+        }
+        .squ1{
+            border: 3px solid orangered;
+            height:210px;
+            width:210px;
+            margin-left:-225px ;
+            margin-top:100px;
+            border-radius: 30px;
+        }
+        .rectangle{
+            border:3px solid goldenrod;
+            height: 90px;
+            width:500px;
+            border-radius: 20px;
+            margin-top:410px;
+            margin-left: -500px;
+        }
+        .rect{
+            border:3px solid goldenrod;
+            height: 70px;
+            width:490px;
+            border-radius: 20px;
+            margin-top:420px;
+            margin-left: -500px;
+        }
+        .rectangle1{
+            border:3px dashed white;
+            height: 90px;
+            width:640px;
+            margin-top:580px;
+            margin-left: -630px;
+        }
+        .square p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;   
+        }
+        .square1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-top:-30px;
+        }
+        .rectangle p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .rectangle1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .arrow p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-130px;
+        }
+        .arrow{
+            margin-top: 400px;
+            margin-left: -650px;
+        }
+         b{
+            margin-top: 300px;
+            margin-left: 10px;
+        }
+        i{
+            margin-top: 410px;
+            margin-left: -65px;
+            font-size: 10px;
+        }
+        }
+        @media screen and (max-width:1200px){
+            body{
+            background-color: black;
+            font-weight: bolder;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main {
+            display: flex;
+        }
+        .square{
+            border: 3px solid greenyellow;
+            height:220px;
+            width:220px;
+            border-radius: 30px;
+            margin-left: 100px;
+            margin-top: 90px;
+        }
+        .squ{
+            border: 3px solid greenyellow;
+            height:200px;
+            width:200px;
+            border-radius: 30px;
+            margin-left: -215px;
+            margin-top: 100px;
+        }
+        .square1{
+            border: 3px solid orangered;
+            height:230px;
+            width:230px;
+            margin-left:300px;
+            margin-top: 90px;
+            border-radius: 30px;
+        }
+        .squ1{
+            border: 3px solid orangered;
+            height:210px;
+            width:210px;
+            margin-left:-225px ;
+            margin-top:100px;
+            border-radius: 30px;
+        }
+        .rectangle{
+            border:3px solid goldenrod;
+            height: 90px;
+            width:500px;
+            border-radius: 20px;
+            margin-top:410px;
+            margin-left: -400px;
+        }
+        .rect{
+            border:3px solid goldenrod;
+            height: 70px;
+            width:490px;
+            border-radius: 20px;
+            margin-top:420px;
+            margin-left: -500px;
+        }
+        .rectangle1{
+            border:3px dashed white;
+            height: 90px;
+            width:640px;
+            margin-top:580px;
+            margin-left: -630px;
+        }
+        .square p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;   
+        }
+        .square1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           margin-top:-30px;
+        }
+        .rectangle p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .rectangle1 p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-30px;
+        }
+        .arrow p{
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:-130px;
+        }
+        .arrow {
+            margin-top: 400px;
+            margin-left: -790px;
+        }
+         b{
+            margin-top: 300px;
+            margin-left: -50px;
+        }
+        i{
+            margin-top: 410px;
+            margin-left: 115px;
+            font-size: 10px;
+        }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+      <div class="square"><p>CALL STACK</p></div>
+      <div class="squ"></div>
+      <div class="square1"><p>WEB API</p></div>
+      <div class="squ1"></div>
+      <div class="rectangle"><p>QUEUE</p></div>
+      <div class="rect"></div>
+      <div class="rectangle1"><p>OUTPUT</p></div>
+      <div class="arrow"><img src="./refresh.png" height="100px" width="100px"><p>EVENT LOOP</p></div>
+      <b style="color: white; font-size: 60px">&#8593;</b>
+      <i style="color: white; font-size: 60px">&#8596;</i>
+    </div>
+</body>
+</html>
